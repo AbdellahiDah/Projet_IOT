@@ -18,38 +18,9 @@ Notre projet de détecteur de fuite d' eau, basé sur la technologie IoT, repré
 ![image](https://github.com/AbdellahiDah/Projet_IOT/assets/99772783/bcb73376-a9d0-42d6-9d0f-e14678f1b660)
 ![image](https://github.com/AbdellahiDah/Projet_IOT/assets/99772783/806a3b28-3b4e-417b-9cf9-b9d04ffcd15e)
 ![image](https://github.com/AbdellahiDah/Projet_IOT/assets/99772783/25a44734-fd2f-4806-ba0e-7200dfbdd3c8)
-
-Pour illustrer le fonctionnement du détecteur de fuite simulé, une représentation graphique du 
-circuit a été créée à l'aide du logiciel Proteus. L'image ci-dessous présente la disposition des 
-composants électroniques discutés précédemment, notamment le POT 3214G-1-103E), l'Arduino 
-Uno, le condensateur, l'inducteur, l'afficheur LM016L, le potentiomètre POT-HG, et le capteur 
-d'eau supplémentaire.
-![image](https://github.com/AbdellahiDah/Projet_IOT/assets/99772783/4a85631f-801d-418e-abb0-7801aaedc82f)
-Cette représentation visuelle du circuit permet de mieux comprendre la disposition physique 
-des composants et offre une perspective claire sur la manière dont ils interagissent au sein du 
-détecteur de fuite simulé. Vous pouvez vous référer à cette image tout au long de la section pour 
-une visualisation plus concrète du système
-
-## Fonctionnement de circuit
-Le fonctionnement du détecteur de fuite est orchestré par un code Arduino élaboré, conçu pour 
-surveiller en continu le capteur de fuite et déclencher une alerte en cas de détection. Le code 
-s'articule autour de la bibliothèque LiquidCrystal pour la gestion de l'afficheur LCD et de Wire 
-pour les communications I2C.
-
-![image](https://github.com/AbdellahiDah/Projet_IOT/assets/99772783/6f84746c-7d7e-433d-8b1f-53327bf44992)
-
-Le détecteur commence son processus en affichant le message "Detector Start" sur l'écran 
-LCD, signifiant le début du cycle de détection.
-
-![image](https://github.com/AbdellahiDah/Projet_IOT/assets/99772783/5343236b-1382-4d60-89cf-8638a155e15c)
-
-Ce script Python établit une communication bidirectionnelle entre une Raspberry Pi et un 
-Arduino via le protocole I2C. 
-La Raspberry Pi envoie une requête périodique à l'Arduino, récupère les données reçues, 
-extrait la valeur associée, et l'affiche à des fins d'exemple. De plus, le script est conçu pour envoyer 
-une notification à une API (fonction sendToAPI()) après chaque itération de la boucle, illustrant 
-ainsi un système complet où les incidents détectés par l'Arduino peuvent déclencher des actions 
-supplémentaires, telles que des notifications vers une application mobile via une API externe. Ce 
-processus permet de garantir une compréhension globale du fonctionnement du système, de la 
-détection des fuites par l'Arduino à la notification des utilisateurs par le biais de l'API connectée à 
-l'application mobile
+![image](https://github.com/AbdellahiDah/Projet_IOT/assets/99772783/0d6ce0ce-a67d-4df4-b7f6-db086cf874e7)
+![image](https://github.com/AbdellahiDah/Projet_IOT/assets/99772783/5dff8c68-e603-447e-befa-4265d6f4be6d)
+![image](https://github.com/AbdellahiDah/Projet_IOT/assets/99772783/f59a7f90-f3b7-420f-881d-300961dda4ae)
+![image](https://github.com/AbdellahiDah/Projet_IOT/assets/99772783/30b0b9a0-5d33-4426-8449-93275fff0985)
+![image](https://github.com/AbdellahiDah/Projet_IOT/assets/99772783/34f4f80a-7d2e-40f7-9d99-ebcb34c19cc9)
+![image](https://github.com/AbdellahiDah/Projet_IOT/assets/99772783/57840b6f-a302-4350-a6b0-52733dfdf5c0)
